@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresher Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h1>About Me</h1>
+        <img src="profile.png" alt="Profile Photo" class="profile-photo">
+        <p>Welcome to my portfolio! I am a fresh graduate passionate about web development and design.</p>
+    </section>
+    []
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project" onclick="openModal('Multiple Disease Predictor Ai model')">
+            <img src="kiosk robot.jpg" alt="Project 1" class="project-image">
+            <h2>Project 1.Multiple Disease Predictor Ai model</h2>
+            <p>• This model was used for disease prediction in AI-tested KIOSK telemedicine model.
+                • I successfully advanced through the internal rounds of the SIH (Smart India Hackathon) by contributing to the
+                development of a Machine Learning-based Multiple Disease Predictor AI model, addressing a specific problem
+                statement related to healthcare.
+                • It is used to improved healthcare and awareness in villages.</p>
+        </div>
+        <div class="project" onclick="openModal('BOOKSHOP AUTOMATION SOFTWARE')">
+            <img src="software.jpg" alt="Project 2" class="project-image">
+            <h2>Project 2 BOOKSHOP AUTOMATION SOFTWARE</h2>
+            <p> An online book ordering system that features an interactive interface for users to place orders on books from
+                the comfort of where they are</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h1>Contact</h1>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Fresher Portfolio</p>
+    </footer>
+
+    <!-- Modals -->
+    <div id="project1-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project1-modal')">&times;</span>
+            <h2>Project 1</h2>
+            <p>This model was used for disease prediction in AI-tested KIOSK telemedicine model.
+                • I successfully advanced through the internal rounds of the SIH (Smart India Hackathon) by contributing to the
+                development of a Machine Learning-based Multiple Disease Predictor AI model, addressing a specific problem
+                statement related to healthcare.
+                • It is used to improved healthcare and awareness in villages.</p>
+            <img src="./kiosk robot.jpg" alt="Project 1">
+        </div>
+    </div>
+
+    <div id="project2-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project2-modal')">&times;</span>
+            <h2>Project 2</h2>
+            <p>. An online book ordering system that features an interactive interface for users to place orders on books from
+                the comfort of where they are</p>
+            <img src="./software.jpg" alt="Project 2">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

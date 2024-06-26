@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(to right, #333333, #555555);
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add 3D shadow effect */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000; /* 3D text effect */
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 2rem auto;
+    width: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 3D shadow effect */
+}
+
+#about {
+    background-color: #222222; /* Darker background for contrast */
+}
+
+#about h1 {
+    color: #ff6f61;
+    text-shadow: 2px 2px 4px #000; /* 3D text effect */
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 3D shadow effect */
+}
+
+#projects {
+    background-color: #333333;
+}
+
+#projects h1 {
+    color: #00cccc;
+    text-shadow: 2px 2px 4px #000; /* 3D text effect */
+}
+
+.project {
+    margin-bottom: 2rem;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #444444;
+    display: inline-block;
+    width: 45%;
+    margin: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px); /* 3D hover effect */
+}
+
+.project-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 3D shadow effect */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #555555; /* Darker background for form */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 3D shadow effect */
+}
+
+form label {
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background-color: #666;
+    color: #fff;
+}
+
+form button {
+    padding: 0.5rem;
+    background: #008080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 3D shadow effect */
+}
+
+form button:hover {
+    background: #006666;
+    transform: translateY(-2px); /* 3D hover effect */
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); /* 3D shadow effect */
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .project {
+        width: 90%;
+    }
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #444444; /* Dark background for modal */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 3D shadow effect */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
